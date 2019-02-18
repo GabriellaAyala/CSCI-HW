@@ -1,3 +1,8 @@
+//  Name      :  Gabriella Ayala        
+//  Student ID:  108427996  
+//  Class     :  CSC 2312           
+//  Due Date  :  Feb. 18, 2019
+
 #ifndef POINT
 #define POINT
 
@@ -8,6 +13,7 @@ class Point{
     private:
         int x;
         int y;
+        //declare class rectangle as a friend of class Point
         friend class Rectangle;
     public:
         //default constructor creates a new point at origin
@@ -19,7 +25,7 @@ class Point{
         void setY(int _y);
         int getX();
         int getY();
-        //overloaded stream operator
+        //overloaded stream operator to print coordinates in (x, y) format
         friend ostream & operator<<(ostream& os, const Point& toPrint);
 };
 
